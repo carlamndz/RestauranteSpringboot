@@ -1,0 +1,132 @@
+:root {
+    --itu-verde: #0a3f43;
+    --itu-verde-dark: #072f32;
+    --itu-verde-light: #e6f2ee;
+    --itu-rojo: #cc0000;
+}
+
+body {
+    background-color: #f4f6f5;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* ── Navbar ── */
+.navbar-itu {
+    background-color: var(--itu-verde-dark);
+    padding: 0.75rem 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navbar-itu a.volver {
+    color: #a8d5c2;
+    text-decoration: none;
+    font-size: 0.95rem;
+    white-space: nowrap;
+    transition: color 0.2s;
+}
+
+.navbar-itu a.volver:hover { color: white; }
+
+.navbar-itu .titulo {
+    flex: 1;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+}
+
+/* ── Cards ── */
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+
+.card-header-itu {
+    background-color: var(--itu-verde);
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.75rem 1.25rem;
+    border-radius: 12px 12px 0 0 !important;
+}
+
+/* ── Tabla ── */
+.table thead th {
+    background-color: var(--itu-verde-dark);
+    color: white;
+    font-weight: 600;
+    border: none;
+    font-size: 0.88rem;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+.table tbody tr:hover { background-color: var(--itu-verde-light); }
+.table td, .table th { vertical-align: middle; }
+
+/* ── Botones ── */
+.btn-itu {
+    background-color: var(--itu-verde);
+    color: white;
+    border: none;
+    font-weight: 600;
+    padding: 0.45rem 1.2rem;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+}
+
+.btn-itu:hover { background-color: var(--itu-verde-dark); color: white; }
+
+.btn-cancelar {
+    background-color: #e0e0e0;
+    color: #444;
+    border: none;
+    font-weight: 600;
+    padding: 0.45rem 1.2rem;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+}
+
+.btn-cancelar:hover { background-color: #ccc; color: #222; }
+
+/* ── Inputs ── */
+.form-control:focus, .form-select:focus {
+    border-color: var(--itu-verde);
+    box-shadow: 0 0 0 0.2rem rgba(0,104,71,0.2);
+}
+
+.form-label {
+    font-weight: 600;
+    font-size: 0.88rem;
+    color: #444;
+    margin-bottom: 0.3rem;
+}
+
+/* ── Feedback de validación ── */
+.invalid-feedback { font-size: 0.8rem; }
+
+/* ── Toast ── */
+.toast-container { z-index: 9999; }
+
+.toast-itu {
+    background-color: var(--itu-verde);
+    color: white;
+    border-radius: 10px;
+    min-width: 260px;
+}
+
+.toast-itu.error { background-color: var(--itu-rojo); }
+
+/* ── Footer ── */
+footer {
+    text-align: center;
+    padding: 1.2rem;
+    color: #999;
+    font-size: 0.8rem;
+    margin-top: 2rem;
+    border-top: 1px solid #e0e0e0;
+}
