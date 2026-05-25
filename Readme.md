@@ -9,12 +9,15 @@ Proyecto de Java SpringBoot para la materia POO · ITU · UNCUYO
 - **Base de datos:** MySQL
 - **Herramientas:** IntelliJ IDEA · Maven · XAMPP
 
+## Diagrama UML
+
+![Diagrama UML](assets/UML-restaurante.png)
+
+
 ## Cómo ejecutar
 
 1. Tener MySQL corriendo en el puerto 3307 (XAMPP)
 2. Nombre bbdd: pruebajpa
-3. User: root
-4. Pwd: ""
 5. Chequear que las versiones coincidan.
 3. Ejecutar el proyecto.
 4. Abrir el navegador en `http://localhost:8080`
